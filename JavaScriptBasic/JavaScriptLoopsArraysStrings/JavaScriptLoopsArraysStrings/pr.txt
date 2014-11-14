@@ -1,0 +1,56 @@
+//polezni
+
+ var rg = [/<a/g,/>/g,/<\/a>/g];
+    var rg = [/<a/g,/>/g,/<\/a>/g];
+    rex = /<a[^>]+>([^<]+)<\/a>/g;
+    var m = string.match(rex).replace(rg[0], "[URL").replace(rg[1], "]".replace(rg[2], "[/URL]");
+    var rex = [/<.*[^>]+>([^<]+)<\/.*>/g;
+    var rex = /<p>(.*?)<\/p>/g;
+   var m = null;
+  //  while ((m = rex.exec(string)) != null) { 
+  //      console.log(m[1]);}
+    // var m = string.match(reg[1]);
+ //   rex = /<a[^>]+>([^<]+)<\/a>/g;
+ //   while ((m = rex.exec(string)) != null) {
+  //      console.log(m[1]);
+    //   }
+    var rg = [/<a/g,/>/g,/<\/a>/g];
+    string=string.replace(rg[0], "[URL");
+    string = string.replace(rg[1], "]");
+    string=string.replace(rg[2], "[/URL]");
+   // var text = string.match(reg[0]);
+    
+    console.log(string);
+    //console.log(m);
+    
+  //  document.getElementById("result").innerHTML = inp;
+}
+
+
+11 zadacha
+var haveSameLength = function (str, a, b) {
+     return ((str.match(a) || []).length === (str.match(b) || []).length);
+}
+
+function checkBrackets(string) {
+    var isClean = 'correct';
+    var arrCount=[];
+    var arr = [/\(/gm, /\)/gm];
+    if (haveSameLength(string, arr[0], arr[1]) != true) {
+        isClean = 'incorrect';
+    }
+
+    while ((word = arr[0].exec(string)) != null) {
+        arrCount.push("");}
+    while ((word = arr[1].exec(string)) != null) {
+        arrCount.pop();
+    }
+        
+    return isClean;
+
+}
+
+console.log(checkBrackets('( ( a + b ) / 5 – d )'));
+console.log(checkBrackets(') ( a + b ( )'));
+console.log(checkBrackets('( b * ( c + d *2 / ( 2 + ( 12 – c / ( a + 3 ) ) ) )'));
+

@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ContentExtracter</title>
+    <style>
+        #wrapper{
+            width: 600px;
+            background-color: #0f1a6d;
+            padding: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            font-size: 26px;
+            color: #ff0000;
+        }
+
+        input {
+            border: none;
+            margin: 30px;
+            color: black;
+            font-size: 16px;
+        }
+
+        input, p, button, h1 {
+            width: 66%;
+            text-align: center;
+            font-family: Tahoma;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            padding: 16px;
+            
+        }
+
+        p {
+            font-size: 20px;
+            color: #bbb;
+        }
+
+        button {
+            font-size: 22px;
+            background: #ff6a00;
+            color: #0f1a6d;
+            border: none;
+        }
+
+           
+    </style>
+</head>
+<body>
+    <div id=wrapper>
+        <h1>Extract Element Content</h1>
+        <div>
+            <form action="#">
+                <input type="text" name="input">
+                <button type="button" onclick="extractContent(input)">Extract</button>
+                <p id="result"></p>
+            </form>
+            <script src="script/17_ContentExtracter.js"></script>
+        </div>
+    </div>
+</body>
+</html>

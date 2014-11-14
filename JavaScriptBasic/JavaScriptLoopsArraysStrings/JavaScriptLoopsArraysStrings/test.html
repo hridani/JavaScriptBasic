@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        function printNumbers(number) {
+            var result = [];
+            var numb = 0;
+            for (var i = 1; i < number; i++) {
+                if (number % 4 != 0 && number % 5 != 0) {
+                    result.push(number);
+                    console.log(number);
+                }
+            }
+            console.log(result);
+        }
+
+        
+    </script>
+</head>
+<body>
+    document.write("printNumbers(20)");
+</body>
+</html>
